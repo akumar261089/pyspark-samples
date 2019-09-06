@@ -1,0 +1,8 @@
+version: '3'
+services:
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook
+    ports:
+      - "4040:4040"
+      - "4041:4041"
+      - "8888:8888"
