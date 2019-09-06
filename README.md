@@ -5,13 +5,13 @@ This will store multiple pyspark samples
 ## Docker compose for jupyter pyspark notebook
 
 Run this command to get cluster up
->docker-compose  -f pyspark-notebook-docker-compose.yml  up
+>docker-compose up -d
    
 Run this to check existing docker compose
->docker-compose -d -f pyspark-notebook-docker-compose.yml  ps
+>docker-compose ps
 
 Run this  to get valid token.
->docker-compose  -f pyspark-notebook-docker-compose.yml  logs
+>docker-compose logs
 
 You can see in logs
  
@@ -24,4 +24,4 @@ pyspark-notebook_1  |      or http://127.0.0.1:8888/?token=8ae556a272e9ce686118f
 ```
 
 Run this command to bring it down.
->docker-compose  -f pyspark-notebook-docker-compose.yml  down
+>docker-compose down
